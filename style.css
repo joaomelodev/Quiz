@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #7159c1;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+main{
+    background:#f0f0f0;
+    grid-area: m;
+    width: 20vw;
+    height: 80vh;
+    border-radius: 10px;
+    
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    
+
+}
+
+
+.conteudo{
+    text-align: center;
+    color: #271E42;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+}
+
+#checado{
+    height: 35px;
+    display: block;
+    margin-left: 75px;
+    margin-top: 20px;
+    width: 150px;
+    font-family: 'Oswald',sans-serif;
+    font-size: 20px;
+    background:#55C23C;
+    border-radius: 25px;
+    outline: none;
+}
+.resposta{
+    color: #f0f0f0;
+}
+.next{
+    color: #f0f0f0;
+}
+.gifaprovado{
+    opacity: 0;
+    width: 100px;
+    height: 100px;
+    
+
+}
+
+a{
+    text-decoration: none;
+}

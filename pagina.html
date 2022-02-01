@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Quiz</title>
+</head>
+
+<body>
+
+
+
+        <div class="container">
+        <header>
+        </header>
+    
+        <main>
+        <div class="conteudo">
+            <h3> Dom Pedro II proclamou a independencia do brasil?</h3>
+            <div>
+                <input type="checkbox" id="true" value="on"> Verdadeiro
+                <input type="checkbox" id="false" value="on"> Falso
+                <input type="submit" value="Resposta" id="checado" onclick="verificar()">
+                
+                <a href="pagina.html"> <p class="next"> Próxima</p></a>
+                <p class="resposta" >.</p>
+                
+                <img src="https://media.giphy.com/media/mCIjCgs3nWQWfJZvPA/giphy.gif" class="gifaprovado"alt="">
+                
+            </div>
+        </div>
+    </main>
+    
+    <footer></footer>
+    </div>
+    
+        <script>
+    
+            const valid = document.getElementById('true');
+            const invalid = document.getElementById('false');
+            
+            
+    
+            document.getElementById("checado").onclick = function(){
+                
+              
+                if (valid.checked){
+                    document.querySelector('.resposta').innerHTML = ("Errou!");
+                    document.querySelector('.resposta').style.color ='#271E42'; 
+                    document.querySelector('.next').innerHTML = ("Próxima");
+                    document.querySelector('.next').style.color ='#271E42';
+                    document.querySelector('.gifreprovado').style.opacity ='3';
+                    
+                }else{
+                    
+                    document.querySelector('.resposta').innerHTML = ("Acertou!");
+                    document.querySelector('.resposta').style.color ='#271E42'; 
+                    document.querySelector('.next').innerHTML = ("Próxima");
+                    document.querySelector('.next').style.color ='#271E42';
+                    document.querySelector('.gifaprovado').style.opacity ='3';
+                    
+                    } 
+                }
+        </script>
+        
+   
+</body>
+</html>
